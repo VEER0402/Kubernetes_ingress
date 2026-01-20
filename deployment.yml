@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sample-python-app
+  labels:
+    app: sample-python-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sample-python-app   # ✅ SAME
+  template:
+    metadata:
+      labels:
+        app: sample-python-app # ✅ SAME
+    spec:
+      containers:
+      - name: python-app
+        image: veer1/python-sample-app-demo:v1
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8000
+
+
