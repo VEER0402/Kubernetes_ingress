@@ -29,7 +29,8 @@ With Ingress:
 
 ## 🧠 Ingress Architecture (Flow)
 
-![Uploading ingress.png…]()
+<img width="1024" height="1024" alt="ingress" src="https://github.com/user-attachments/assets/85c16d4c-7e6a-4151-b330-9ee57d3938fd" />
+
 
 ```
 
